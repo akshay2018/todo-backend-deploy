@@ -46,7 +46,7 @@ let setServer = (server) => {
                 to: data.email, // list of receivers
                 subject: 'Welcome to ToDo', // Subject line
                 html: `Hi ${data.firstName} ${data.lastName},<br><br>
-                Welcome to the To Do App. It is used to create tasks with your friends and private as well.<br>Please Click <a href="http://akkirr.com/activate?activateToken=${data.activateUserToken}" >here</a> to verify your email and continue with our sevices.<br><br> Warm Regards,<br>Akshay` // html body
+                Welcome to the To Do App. It is used to create tasks with your friends and private as well.<br>Please Click <a href="http://akkirr.com/activate?activateToken=${data.activateUserToken}" >here</a> to verify your email and continue with our sevices.<br><br> Warm Regards,<br>Akshay R` // html body
             };
             transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
@@ -81,7 +81,7 @@ let setServer = (server) => {
                 from: '"ToDo" <Akki@Todo.com>', // sender address
                 to: data.email, // list of receivers
                 subject: 'Reset Password', // Subject line
-                html: `Hi,<br><br>If you are receiving this email, You have forgotten the password on ToDo.<br>To reset the password Click the <a href="http://akkirr.com/reset?passwordToken=${data.resetPasswordToken}">link</a><br><b>The link will expire in 5 minutes</b><br><br>Warm Regards,<br>Akshay` // html body
+                html: `Hi,<br><br>If you are receiving this email, You have forgotten the password on ToDo.<br>To reset the password Click the <a href="http://akkirr.com/reset?passwordToken=${data.resetPasswordToken}">link</a><br><b>The link will expire in 5 minutes</b><br><br>Warm Regards,<br>Akshay R` // html body
             };
             transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
